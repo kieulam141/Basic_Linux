@@ -2,6 +2,7 @@
 
 ### 1.Boot the System
 - Các loại boot loader như LILO (Linux Loader) hay GRUB (Grand Unified BootLoader), để khởi động kernel Linux.
+
 #### 1.1.Boot-time Kernel Parameters
 - Set trong file cấu hình boot loader của bạn (/etc/lilo.conf hoặc /boot/grub/menu.lst và /boot/grub/grub.conf hoặc /boot/grub2/grub.cfg(Cent7))
 - Tuy nhiên Linux kernel có thể được tùy chỉnh khi khởi động bằng command-line interface.
@@ -43,6 +44,8 @@
   <li>Script được chạy bởi init khi khởi động.</li>
   <li>Script được thiết kế để chạy trước khi bất kì daemons nào chạy</li>
 </ul>
+- /etc/rc.local
+
 #### 2.3.Setting the Default Runlevel
 
 #### 2.4.Determining Your System’s Runlevel

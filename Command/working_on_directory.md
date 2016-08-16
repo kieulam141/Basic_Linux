@@ -20,3 +20,8 @@ cp [options] -t directory source
 - `cp -R /one/two /three/four` : copy toàn bộ nội dung thư mục *two* vào trong thư mục đích, nếu thư mục đích chưa có thì sẽ tạo.
 - Tạo symbol link thay bằng việc copy dữ liệu, giống với lệnh `ln` nhưng có thể tạo nhiều link 1 lúc: `cp -s file.txt file2.txt`
 - Lưu ý: để tạo symbol link vào thư mục khác, bạn cần chỉ rõ full pathname, bao gồm tên directory đầy đủ 
+
+## 3.find
+Sử dụng để tìm và định vị các file, thư mục theo các tham số mà bạn chỉ định ( permission, users, groups, file types, date, size)
+- Tìm file tại thư mục đang làm việc: `find . -name test.txt`
+- Tìm tất cả file ở thư mục home: `fine /home -name test.txt`

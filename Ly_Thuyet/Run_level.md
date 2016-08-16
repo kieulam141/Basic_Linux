@@ -20,6 +20,7 @@
 ### 2.Change Runlevels and Shut Down or Reboot System
 - Chỉ định các cách khác nhau để sử dụng hệ thống bằng việc controll các service nào chạy.
 - Các mức level của Runlevel:0-6
+
 | Runlevel | Description |
 | --- | --- |
 | 0 | Dừng hệ thống.Runlevel 0 là 1 trạng thái chuyển tiếp dặc biệt được sử dụng bởi admin để shutdown hệ thống ngay lập tức.|

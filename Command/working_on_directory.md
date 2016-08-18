@@ -53,4 +53,15 @@ Sử dụng để tìm và định vị các file, thư mục theo các tham s�
 
 
 ## 4.Grep
-- 
+Lệnh Grep để tìm kiếm từ hoặc 1 dòng chứa từ hoặc xâu cho trước.Mặc định grep sẽ in ra dòng đấy.
+- Tìm theo chuỗi cho trước: `grep "literal_string" file`
+- Tìm theo chuỗi cho trước với nhiều file: `grep "string" multifile` => `grep "LamKT" "demo*"`
+- Không phân biệt chữ hoa chữ thường: `grep -i "string" file`
+- Tìm theo các biểu thức thông thường trong file.vd sau sẽ tìm các dòng bắt đầu bằng *lines* và kết thúc bằng *empty* với bất kì kí tự gì ở giữa: `grep "REGEX" file` =>> `grep "lines.*empty" demo_file`
+- Tìm theo tên đầy đủ không phải sub-string: `grep -w "string" file`
+- Hiển thị N dòng trước/sau/cả trước+sau bằng tham số -A, -B, -C: `grep -A/-B/-C <N> "string" file`
+- Tìm trong tất cả các file: `grep -r "namessh" *`
+- Show ra các dòng không chứa từ cho trước: `grep -v "string" file`
+- Show ra các dòng không chứa nhiều từ cho trước" `grep -v -e "string" -e "string" file`
+- Đếm số từ: `grep -c "string" file`
+- Show ra số thứ tự dòng: `grep -n "string" file`
